@@ -1,0 +1,72 @@
+/* Général */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #6495ED;
+  padding: 15px;
+  color: white;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container principal */
+.main-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Titre de bienvenue */
+.main-container h2 {
+  color: #3b82f6;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.main-container p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* Boutons */
+.main-container a button {
+  background-color: #6495ED;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 220px;
+  transition: background-color 0.2s ease;
+}
+
+.main-container a button:hover {
+  background-color: #417de0;
+}
