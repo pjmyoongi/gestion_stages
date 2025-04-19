@@ -41,8 +41,8 @@ if (!$user) {
 </head>
 <body>
 <div class="form-container">
-    <h2>Mon Profil</h2>
     <a href="../welcome.php" style="color: #6495ED;">← Retour à l'Accueil</a>
+    <h2>Mon Profil</h2>
     <!-- Photo de profil -->
     <div class="section">
         <?php if (!empty($user["photo"]) && file_exists("../assets/uploads/" . $user["photo"])): ?>

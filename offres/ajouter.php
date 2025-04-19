@@ -29,6 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 <div class="form-container">
+<a href="../dashboard/entreprise.php" style="color: #6495ED;">← Retour à l'Accueil</a>
+
     <h2>Ajouter une Offre</h2>
     <form method="post">
         <input type="text" name="titre" placeholder="Titre de l'offre" required>

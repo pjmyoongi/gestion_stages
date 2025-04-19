@@ -34,6 +34,7 @@ $offres = $stmt->fetchAll();
 </head>
 <body>
 <div class="form-container">
+<a href="../welcome.php" style="color: #6495ED;">← Retour à l'Accueil</a>
     <h2>Offres disponibles</h2>
 
     <!-- Formulaire de filtre -->

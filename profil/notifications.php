@@ -26,8 +26,9 @@ $notifications = $stmt->fetchAll();
 </head>
 <body>
 <div class="form-container">
-    <h2>Mes Notifications</h2>
+    <a href="../welcome.php" style="color: #6495ED;">← Retour à l'Accueil</a>
 
+    <h2>Mes Notifications</h2>
     <?php if (count($notifications) > 0): ?>
         <?php foreach ($notifications as $n): ?>
             <div class="alert <?= $n['type'] ?>">

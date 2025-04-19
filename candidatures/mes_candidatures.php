@@ -39,7 +39,9 @@ $candidatures = $stmt->fetchAll();
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+
 <div class="form-container">
+    <a href="../welcome.php" style="color: #6495ED;">← Retour à l'Accueil</a>
     <h2>Mes Candidatures</h2>
 
     <?php if (count($candidatures) > 0): ?>

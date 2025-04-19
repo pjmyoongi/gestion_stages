@@ -55,6 +55,8 @@ $offres = $stmt->fetchAll();
 </head>
 <body>
 <div class="form-container">
+    <a href="../dashboard/entreprise.php" style="color: #6495ED;">← Retour à l'Accueil</a>
+
     <h2>Mes Offres Publiées</h2>
 
     <?php if (count($offres) > 0): ?>

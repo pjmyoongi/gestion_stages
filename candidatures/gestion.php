@@ -50,6 +50,8 @@ foreach ($candidatures as $c) {
 </head>
 <body>
 <div class="form-container">
+<a href="../dashboard/entreprise.php" style="color: #6495ED;">← Retour à l'Accueil</a>
+
     <h2>Candidatures reçues</h2>
 
     <?php if (count($grouped) > 0): ?>

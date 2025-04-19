@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
 <div class="form-container">
     <h2>Ajouter une Offre</h2>
+
     <form method="post">
         <input type="text" name="titre" placeholder="Titre de l'offre" required>
         <textarea name="description" placeholder="Description détaillée" rows="5" required></textarea>

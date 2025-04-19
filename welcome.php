@@ -29,7 +29,7 @@ if ($user_role === "candidat") {
 
 <header style="background-color: #6495ED; padding: 15px; color: white;">
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: auto;">
-        <h1 style="font-size: 20px;">Projet Fédéré</h1>
+        <h1 style="font-size: 20px;">StageUP</h1>
         <nav>
             <a href="welcome.php" style="margin-right: 15px; color: white;">Accueil</a>
             <?php if ($user_role === "candidat"): ?>
@@ -76,7 +76,7 @@ if ($user_role === "candidat") {
 </div>
 
 <footer style="text-align: center; padding: 20px; background: #f0f2f5; color: #333;">
-    <p>&copy; <?= date("Y") ?> Projet Fédéré - ISAMM</p>
+    <p>&copy; <?= date("Y") ?> StageUP- ISAMM</p>
 </footer>
 </body>
 </html>
