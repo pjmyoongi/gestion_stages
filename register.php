@@ -1,12 +1,7 @@
-<?php include("includes/db.php"); ?>
-<?php if (isset($_SESSION['error'])): ?>
-    <script>
-        alert("<?= addslashes($_SESSION['error']) ?>");
-    </script>
-    <?php unset($_SESSION['error']); ?>
-<?php endif; ?>
-
-
+<?php
+session_start();
+include("includes/db.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -77,6 +72,19 @@
       background-color: #4178D6;
     }
 
+    .alert {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .alert.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
     @media screen and (max-width: 768px) {
       .form-container {
         flex-direction: column;
@@ -94,6 +102,14 @@
       <!-- Formulaire de connexion -->
       <form method="post" action="includes/login_process.php">
         <h2>Connexion</h2>
+
+        <?php if (isset($_SESSION['error'])): ?>
+          <div class="alert error">
+            <?= htmlspecialchars($_SESSION['error']) ?>
+          </div>
+          <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
+
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Mot de passe" required>
         <button type="submit">Se connecter</button>

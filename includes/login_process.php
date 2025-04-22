@@ -32,12 +32,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         } else {
             $_SESSION['error'] = "Email ou mot de passe incorrect.";
-            header("Location: " . ($redirect_url ? $redirect_url : "../login.php"));
+            header("Location: " . ($redirect_url ? $redirect_url : "../register.php"));
             exit();
         }
     } else {
         $_SESSION['error'] = "Veuillez remplir tous les champs.";
-        header("Location: " . ($redirect_url ? $redirect_url : "../login.php"));
+        header("Location: " . ($redirect_url ? $redirect_url : "../register.php"));
         exit();
     }
 }
